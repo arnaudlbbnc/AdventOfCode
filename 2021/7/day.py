@@ -31,7 +31,7 @@ def calculateComplexFuel(position, crabsPosition):
     return fuel
 
 if __name__ == "__main__":
-    inputFile = open('/Users/arnaudlebourblanc/Documents/workspace/Arnaud/AdventOfCode/2021/7/input.txt', 'r')
+    inputFile = open('input.txt', 'r')
     inputs = inputFile.read().splitlines()
     inputsNum = [int(str) for str in inputs[0].split(',')]
 
