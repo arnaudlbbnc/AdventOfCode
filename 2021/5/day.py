@@ -68,7 +68,7 @@ def formatVector(input):
     return Vector(Point.fromRaw(pointsRaw[0]), Point.fromRaw(pointsRaw[1]))
 
 if __name__ == "__main__":
-    inputFile = open('/Users/arnaudlebourblanc/Documents/workspace/Arnaud/AdventOfCode/2021/5/input.txt', 'r')
+    inputFile = open('input.txt', 'r')
     inputs = inputFile.read().splitlines()
     vectors = [formatVector(input) for input in inputs]
 
