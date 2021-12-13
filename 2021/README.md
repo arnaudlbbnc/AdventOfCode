@@ -21,7 +21,7 @@ All the code produced for this AdventOfCode is successfull for the challenge but
 | Day 6  |     ✅    |     ✅    |
 | Day 7  |     ✅    |     ✅    |
 | Day 8  |     ✅    |     ✅    |
-| Day 9  |         |         |
+| Day 9  |     ✅    |     ✅    |
 | Day 10 |         |         |
 | Day 11 |         |         |
 | Day 12 |         |         |
