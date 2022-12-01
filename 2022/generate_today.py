@@ -1,4 +1,8 @@
-import datetime, sys, os, shutil, requests
+import datetime
+import sys
+import os
+import shutil
+import requests
 
 if len(sys.argv) == 2:
     dayOfMonth = sys.argv[1]
@@ -20,9 +24,9 @@ except OSError:
     sys.exit("Creation of the directory %s failed" % folderPath)
 
 
-#Input GET
-inputUrl = "https://adventofcode.com/2021/day/" + dayOfMonth + "/input"
-sessionId = "53616c7465645f5ff1c80d6dee30a51b31348e3a9b9880c53f3d963dd1a93cc6e02c9a10846bfe1dbcfe978310a8860d"
+# Input GET
+inputUrl = "https://adventofcode.com/2022/day/" + dayOfMonth + "/input"
+sessionId = "53616c7465645f5f08c73c6961fc0e6b62e7359e893fbb348452430b319c0b032211521cc7756b9a8bc79b25f53dbdb4215a50e6d4944757932053801cc2223a"
 
 cookies = {'session': sessionId}
 
