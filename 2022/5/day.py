@@ -1,5 +1,25 @@
 from pathlib import Path
 import copy
+import time
+
+MAX_LINES = 100
+
+
+def printStacks(leftStacks, rightStacks):
+    stacks = copy.deepcopy(leftStacks)
+    stacks.extend([['']]*5)
+    stacks.extend(copy.deepcopy(rightStacks))
+    max = MAX_LINES
+    representation = ""
+    for i in range(max, 0, -1):
+        for stack in stacks:
+            if i <= len(stack) and stack[i-1] != '':
+                representation += '[' + stack[i-1] + '] '
+            else:
+                representation += '    '
+        representation += '\n'
+    print(representation)
+    time.sleep(0.05)
 
 
 def extractCommandInformations(command):
@@ -21,21 +41,21 @@ if __name__ == "__main__":
                 stacks[j].append(inputs[stackIndex][crateIndex])
 
     partOneStacks = copy.deepcopy(stacks)
+    partTwoStacks = copy.deepcopy(stacks)
+    print("\n"*MAX_LINES)
     for command in inputs[10:]:
+        printStacks(partOneStacks, partTwoStacks)
         commandInformations = extractCommandInformations(command)
 
         for number in range(0, commandInformations[0]):
             partOneStacks[commandInformations[2] -
                           1].append(partOneStacks[commandInformations[1]-1].pop())
 
-    print(''.join([stack[-1] for stack in partOneStacks]))
-
-    partTwoStacks = copy.deepcopy(stacks)
-    for command in inputs[10:]:
-        commandInformations = extractCommandInformations(command)
-
         partTwoStacks[commandInformations[2] -
                       1].extend(partTwoStacks[commandInformations[1]-1][-commandInformations[0]:])
         del partTwoStacks[commandInformations[1]-1][-commandInformations[0]:]
+        print("\033[F"*MAX_LINES)
+    printStacks(partOneStacks, partTwoStacks)
 
+    print(''.join([stack[-1] for stack in partOneStacks]))
     print(''.join([stack[-1] for stack in partTwoStacks]))
