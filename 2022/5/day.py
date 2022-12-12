@@ -45,6 +45,7 @@ if __name__ == "__main__":
     print("\n"*MAX_LINES)
     for command in inputs[10:]:
         printStacks(partOneStacks, partTwoStacks)
+        print("\033[F"*MAX_LINES)
         commandInformations = extractCommandInformations(command)
 
         for number in range(0, commandInformations[0]):
@@ -54,7 +55,6 @@ if __name__ == "__main__":
         partTwoStacks[commandInformations[2] -
                       1].extend(partTwoStacks[commandInformations[1]-1][-commandInformations[0]:])
         del partTwoStacks[commandInformations[1]-1][-commandInformations[0]:]
-        print("\033[F"*MAX_LINES)
     printStacks(partOneStacks, partTwoStacks)
 
     print(''.join([stack[-1] for stack in partOneStacks]))
