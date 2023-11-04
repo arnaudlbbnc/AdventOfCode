@@ -37,16 +37,10 @@ jobs:
           aocSession: ${{ secrets.AOCSESSION }}
         run: python dataviz/compareUsers.py
 
-      - name: commit files
+      - name: commit and push files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
           git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
-
-      - name: push changes
-        uses: x-actions/git-push@v1.0
-        with:
-          GITHUB_EMAIL: "action@github.com"
-          GITHUB_USERNAME: "GitHub Action"
-          PUBLISH_BRANCH: dataviz 
+          git push 
