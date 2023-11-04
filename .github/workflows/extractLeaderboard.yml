@@ -2,7 +2,7 @@ name: Save daily leaderboard
 
 on:
   schedule:
-    - cron: '0 5 * * *' # At 05:OO UTC
+    - cron: '50 4 * * *' # At 04:55 UTC
   workflow_dispatch:
 
 jobs:
@@ -25,13 +25,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r dataviz/requirements.txt
 
-      - name: execute py script # run extractLeaderboard.py
+      - name: execute extractLeaderboard py script # run extractLeaderboard.py
         env:
           aocLeaderboardId: ${{ secrets.AOCLEADERBOARDID }}
           aocSession: ${{ secrets.AOCSESSION }}
         run: python dataviz/extractLeaderboard.py
 
-      - name: execute py script # run compareUsers.py
+      - name: execute compareUsers py script # run compareUsers.py
         env:
           aocLeaderboardId: ${{ secrets.AOCLEADERBOARDID }}
           aocSession: ${{ secrets.AOCSESSION }}
