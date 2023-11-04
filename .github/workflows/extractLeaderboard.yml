@@ -3,6 +3,7 @@ name: Save daily leaderboard
 on:
   schedule:
     - cron: '0 5 * * *' # At 05:OO UTC
+  workflow_dispatch:
 
 jobs:
   build:
