@@ -2,7 +2,6 @@ import json
 import datetime
 import os
 import requests
-import shutil
 import sys
 
 today = datetime.date.today()
