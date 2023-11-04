@@ -24,7 +24,13 @@ jobs:
         env:
           aocLeaderboardId: ${{ secrets.AOCLEADERBOARDID }}
           aocSession: ${{ secrets.AOCSESSION }}
-        run: python datavize/extractLeaderboard.py
+        run: python dataviz/extractLeaderboard.py
+
+      - name: execute py script # run compareUsers.py
+        env:
+          aocLeaderboardId: ${{ secrets.AOCLEADERBOARDID }}
+          aocSession: ${{ secrets.AOCSESSION }}
+        run: python dataviz/compareUsers.py
 
       - name: commit files
         run: |
