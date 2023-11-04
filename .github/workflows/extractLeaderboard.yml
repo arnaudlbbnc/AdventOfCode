@@ -32,9 +32,6 @@ jobs:
         run: python dataviz/extractLeaderboard.py
 
       - name: execute compareUsers py script # run compareUsers.py
-        env:
-          aocLeaderboardId: ${{ secrets.AOCLEADERBOARDID }}
-          aocSession: ${{ secrets.AOCSESSION }}
         run: python dataviz/compareUsers.py
 
       - name: commit and push files
@@ -42,5 +39,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
+          git diff-index --quiet HEAD || (git commit -a -m "Daily leaderboard" --allow-empty)
           git push 
