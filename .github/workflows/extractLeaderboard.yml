@@ -11,14 +11,12 @@ jobs:
     steps:
 
       - name: checkout repo content
-        uses: actions/checkout@v2 # checkout the repository content
-
-      - name: checkout dataviz
-        run: |
-          git checkout dataviz
+        uses: actions/checkout@v4.1.1 # checkout the repository content
+        with:
+          ref: dataviz
 
       - name: setup python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v4.7.1
         with:
           python-version: '3.11' # install the python version needed
 
