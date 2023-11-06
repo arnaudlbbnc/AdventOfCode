@@ -1,0 +1,35 @@
+name: Format leaderboard
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: checkout repo content
+        uses: actions/checkout@v4.1.1 # checkout the repository content
+        with:
+          ref: dataviz
+
+      - name: setup python
+        uses: actions/setup-python@v4.7.1
+        with:
+          python-version: '3.11' # install the python version needed
+
+      - name: install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r dataviz/requirements.txt
+
+      - name: execute compareUsers py script # run formatLeaderboard.py
+        run: python dataviz/formatLeaderboard.py
+
+      - name: commit and push files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff-index --quiet HEAD || (git commit -a -m "Daily formatted leaderboard" --allow-empty)
+          git push 
