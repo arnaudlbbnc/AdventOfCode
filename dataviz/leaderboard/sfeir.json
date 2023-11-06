@@ -1,8 +1,9 @@
 {
     "624919": {
         "id": "624919",
-        "prenom": "Arnaud",
-        "nom": "Le Bourblanc",
+        "aocUsername": "Arnaud Le Bourblanc",
+        "firstname": "Arnaud",
+        "lastname": "Le Bourblanc",
         "agence": "PARIS"
     }
 }
