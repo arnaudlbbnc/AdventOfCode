@@ -7,10 +7,10 @@ import sys
 today = datetime.date.today()
 day = today.day
 month = today.month
-year = 2023
  
 leaderboardId = os.environ.get('aocLeaderboardId', 'leaderboard')
-inputUrl = "https://adventofcode.com/{year}/leaderboard/private/view/{leaderboardId}.json".format(year=str(year), leaderboardId=leaderboardId)
+year = os.environ.get('aocYear', '2023')
+inputUrl = "https://adventofcode.com/{year}/leaderboard/private/view/{leaderboardId}.json".format(year=year, leaderboardId=leaderboardId)
 session = os.environ.get('aocSession', 'session')
 cookies = {'session': session}
 
@@ -22,6 +22,7 @@ if code == requests.codes['not_found']:
     sys.exit("The leaderboard file doesn't exist, the generation will stop.")
 
 data = response.json()
-filePath = os.getcwd() + "/dataviz/leaderboard/" + str(day) + "-" + str(month) + ".json"
+
+filePath = "{base}/dataviz/leaderboard/{year}/{day}-{month}.json".format(base=os.getcwd(), year=year, day=day, month=month)
 with open(filePath, "w") as file:
     json.dump(data , file)
