@@ -29,12 +29,14 @@ def extractAllTimeStamps(days):
 today = datetime.date.today()
 day = today.day
 month = today.month
+year = today.year
+aocYear = os.environ.get('aocYear', '2023')
 
-filePathLeaderboard = os.getcwd() + "/dataviz/leaderboard/" + str(day) + "-" + str(month) + ".json"
+filePathLeaderboard = "{base}/dataviz/leaderboard/{aocYear}/{day}-{month}.json".format(base=os.getcwd(), aocYear=aocYear, day=day, month=month)
 fileLeaderboard = open(filePathLeaderboard)
 dataLeaderboard = json.load(fileLeaderboard)
 
-filePathSfeir = os.getcwd() + "/dataviz/leaderboard/sfeir.json"
+filePathSfeir = "{base}/dataviz/leaderboard/{aocYear}/sfeir.json".format(base=os.getcwd(), aocYear=aocYear)
 fileSfeir = open(filePathSfeir)
 dataSfeir = json.load(fileSfeir)
 
@@ -51,6 +53,6 @@ for memberId in dataSfeir:
     member = Member(memberId, dataMemberLeaderboard['name'], dataMemberSfeir['firstname'], dataMemberSfeir['lastname'], dataMemberLeaderboard['local_score'], dataMemberLeaderboard['stars'], timestamps)
     formattedMembers.append(member)
 
-filePath = os.getcwd() + "/dataviz/leaderboard/" + str(day) + "-" + str(month) + "_formatted.json"
+filePath = "{base}/dataviz/leaderboard/{aocYear}/formatted/{year}-{month}-{day}.json".format(base=os.getcwd(), aocYear=aocYear,year=year, month=month, day=day)
 with open(filePath, "w") as file:
     json.dump([m.__dict__ for m in formattedMembers] , file)

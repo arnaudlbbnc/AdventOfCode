@@ -6,11 +6,12 @@ today = datetime.date.today()
 day = today.day
 month = today.month
 
-filePathLeaderboard = os.getcwd() + "/dataviz/leaderboard/" + str(day) + "-" + str(month) + ".json"
+year = os.environ.get('aocYear', '2023')
+filePathLeaderboard = "{base}/dataviz/leaderboard/{year}/{day}-{month}.json".format(base=os.getcwd(), year=year, day=day, month=month)
 fileLeaderboard = open(filePathLeaderboard)
 dataLeaderboard = json.load(fileLeaderboard)
 
-filePathSfeir = os.getcwd() + "/dataviz/leaderboard/sfeir.json"
+filePathSfeir = "{base}/dataviz/leaderboard/{year}/sfeir.json".format(base=os.getcwd(), year=year)
 fileSfeir = open(filePathSfeir)
 dataSfeir = json.load(fileSfeir)
 
