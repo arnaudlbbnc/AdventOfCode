@@ -3,7 +3,7 @@ import datetime
 import os
 
 class Member:
-    def __init__(self, id, aocUsername, firstname, lastname, localScore, stars, timestamps):
+    def __init__(self, id, aocUsername, firstname, lastname, localScore, stars, timestamps, agency):
         self.id = id
         self.aocUsername = aocUsername
         self.firstname = firstname
@@ -11,6 +11,7 @@ class Member:
         self.localScore = localScore
         self.stars = stars
         self.timestamps = timestamps
+        self.agency = agency
 
 def extractTimestamps(day):
     timestamps = []
@@ -50,7 +51,7 @@ for memberId in dataSfeir:
     dataMemberSfeir = dataSfeir[memberId]
 
     timestamps = extractAllTimeStamps(dataMemberLeaderboard['completion_day_level'])
-    member = Member(memberId, dataMemberLeaderboard['name'], dataMemberSfeir['firstname'], dataMemberSfeir['lastname'], dataMemberLeaderboard['local_score'], dataMemberLeaderboard['stars'], timestamps)
+    member = Member(memberId, dataMemberLeaderboard['name'], dataMemberSfeir['firstname'], dataMemberSfeir['lastname'], dataMemberLeaderboard['local_score'], dataMemberLeaderboard['stars'], timestamps, dataMemberSfeir['agency'])
     formattedMembers.append(member)
 
 filePath = "{base}/dataviz/leaderboard/{aocYear}/formatted/{year}-{month}-{day}.json".format(base=os.getcwd(), aocYear=aocYear,year=year, month=month, day=day)
