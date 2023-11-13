@@ -4,27 +4,27 @@
         "aocUsername": "Arnaud Le Bourblanc",
         "firstname": "Arnaud",
         "lastname": "Le Bourblanc",
-        "agence": "PARIS"
+        "agency": "PARIS"
     },
     "205230": {
         "id": "205230",
         "aocUsername": "geektortoise",
         "firstname": "Renaud",
         "lastname": "Hooyux",
-        "agence": "BELGIUM"
+        "agency": "BELGIUM"
     },
     "2265940": {
         "id": "2265940",
         "aocUsername": "Olivier GRÉGOIRE",
         "firstname": "Olivier",
         "lastname": "Grégoire",
-        "agence": "BELGIUM"
+        "agency": "BELGIUM"
     },
     "2369419": {
         "id": "2369419",
         "aocUsername": "Antoine Untereiner",
         "firstname": "Antoine",
         "lastname": "Untereiner",
-        "agence": "LUXEMBOURG"
+        "agency": "LUXEMBOURG"
     }
 }
