@@ -38,7 +38,7 @@
         "id": "3217614",
         "aocUsername": "uliseshdzc",
         "firstname": "Ulises",
-        "lastname": "HERNANDEZ CALZADILLAS",
+        "lastname": "Hernandez Calzadillas",
         "agency": "LUXEMBOURG"
     },
     "3198790": {
@@ -52,7 +52,49 @@
         "id": "3217630",
         "aocUsername": "Baptiste PIRAULT",
         "firstname": "Baptiste",
-        "lastname": "PIRAULT",
+        "lastname": "Pirault",
+        "agency": "PARIS"
+    },
+    "3226299": {
+        "id": "3226299",
+        "aocUsername": "Luiz Henriques",
+        "firstname": "Luiz Henriques",
+        "lastname": "Henriques",
+        "agency": "PARIS"
+    },
+    "202047": {
+        "id": "202047",
+        "aocUsername": "gregorybarale",
+        "firstname": "Gregory",
+        "lastname": "Barale",
+        "agency": "PARIS"
+    },
+    "3223714": {
+        "id": "3223714",
+        "aocUsername": "Corentin KOZKA",
+        "firstname": "Corentin",
+        "lastname": "Kozka",
+        "agency": "PARIS"
+    },
+    "2335889": {
+        "id": "2335889",
+        "aocUsername": "Eolran",
+        "firstname": "Yoann",
+        "lastname": "Legrand",
+        "agency": "PARIS"
+    },
+    "446961": {
+        "id": "446961",
+        "aocUsername": "remidu",
+        "firstname": "Rémi",
+        "lastname": "Duriez",
+        "agency": "LILLE"
+    },
+    "3223731": {
+        "id": "3223731",
+        "aocUsername": "Brice KUCA",
+        "firstname": "Brice",
+        "lastname": "Kuca",
         "agency": "PARIS"
     }
 }
