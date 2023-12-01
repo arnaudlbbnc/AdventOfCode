@@ -152,5 +152,61 @@
         "firstname": "Thierry",
         "lastname": "Barnier",
         "agency": "PARIS"
+    },
+    "3276802": {
+        "id": "3276802",
+        "aocUsername": "César Velásquez",
+        "firstname": "César",
+        "lastname": "Velásquez",
+        "agency": "STRASBOURG"
+    },
+    "1503315": {
+        "id": "1503315",
+        "aocUsername": "Mike SCHILLING",
+        "firstname": "Mike",
+        "lastname": "Schilling",
+        "agency": "LUXEMBOURG"
+    },
+    "1501011": {
+        "id": "1501011",
+        "aocUsername": "Valentin LEFORT",
+        "firstname": "Valentin",
+        "lastname": "Lefort",
+        "agency": "NANTES"
+    },
+    "3284026": {
+        "id": "3284026",
+        "aocUsername": "KurzF",
+        "firstname": "Fabien",
+        "lastname": "Kurz",
+        "agency": "STRASBOURG"
+    },
+    "2305200": {
+        "id": "2305200",
+        "aocUsername": "Louis DELARUE",
+        "firstname": "Louis",
+        "lastname": "Delarue",
+        "agency": "LILLE"
+    },
+    "1591604": {
+        "id": "1591604",
+        "aocUsername": "Dylan Koehl",
+        "firstname": "Dylan",
+        "lastname": "Koehl",
+        "agency": "STRASBOURG"
+    },
+    "3292611": {
+        "id": "3292611",
+        "aocUsername": "Abraham Giuliani",
+        "firstname": "Abraham",
+        "lastname": "Giuliani",
+        "agency": "LUXEMBOURG"
+    },
+    "2453222": {
+        "id": "2453222",
+        "aocUsername": "Paul Robin",
+        "firstname": "Paul",
+        "lastname": "Robin",
+        "agency": "STRASBOURG"
     }
 }
