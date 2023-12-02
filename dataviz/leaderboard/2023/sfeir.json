@@ -208,5 +208,117 @@
         "firstname": "Paul",
         "lastname": "Robin",
         "agency": "STRASBOURG"
+    },
+    "2317893": {
+        "id": "2317893",
+        "aocUsername": "Stéphane Bierbaum",
+        "firstname": "Stéphane",
+        "lastname": "Bierbaum",
+        "agency": "STRASBOURG"
+    },
+    "3350016": {
+        "id": "3350016",
+        "aocUsername": "Victor VOISIN",
+        "firstname": "Victor",
+        "lastname": "Voisin",
+        "agency": "STRASBOURG"
+    },
+    "3363997": {
+        "id": "3363997",
+        "aocUsername": "Ali Mahfoudhi",
+        "firstname": "Ali",
+        "lastname": "Mahfoudhi",
+        "agency": "PARIS"
+    },
+    "3295863": {
+        "id": "3295863",
+        "aocUsername": "Stéphane Kermabon",
+        "firstname": "Stéphane",
+        "lastname": "Kermabon",
+        "agency": "NANTES"
+    },
+    "1007410": {
+        "id": "1007410",
+        "aocUsername": "David Junger",
+        "firstname": "David",
+        "lastname": "Junger",
+        "agency": "PARIS"
+    },
+    "2524523": {
+        "id": "2524523",
+        "aocUsername": "Antoine Méausoone",
+        "firstname": "Antoine",
+        "lastname": "Méausoone",
+        "agency": "LILLE"
+    },
+    "3493726": {
+        "id": "3493726",
+        "aocUsername": "Lynda BENARAB",
+        "firstname": "Lynda",
+        "lastname": "Benarab",
+        "agency": "PARIS"
+    },
+    "988894": {
+        "id": "988894",
+        "aocUsername": "Stéphane Lallemagne",
+        "firstname": "Stéphane",
+        "lastname": "Lallemagne",
+        "agency": "BORDEAUX"
+    },
+    "729480": {
+        "id": "729480",
+        "aocUsername": "Yves DAUTREMAY",
+        "firstname": "Yves",
+        "lastname": "Dautremay",
+        "agency": "STRASBOURG"
+    },
+    "1519674": {
+        "id": "1519674",
+        "aocUsername": "Tanguy SIRONNEAU",
+        "firstname": "Tanguy",
+        "lastname": "Sironneau",
+        "agency": "LILLE"
+    },
+    "835217": {
+        "id": "835217",
+        "aocUsername": "ThomasGoetzmann",
+        "firstname": "Thomas",
+        "lastname": "Goetzmann",
+        "agency": "STRASBOURG"
+    },
+    "784619": {
+        "id": "784619",
+        "aocUsername": "Lesage Yann",
+        "firstname": "Lesage",
+        "lastname": "Yann",
+        "agency": "LILLE"
+    },
+    "807776": {
+        "id": "807776",
+        "aocUsername": "Vincent Mariani",
+        "firstname": "Vincent",
+        "lastname": "Mariani",
+        "agency": "PARIS"
+    },
+    "3390396": {
+        "id": "3390396",
+        "aocUsername": "Maxime ZIMMER",
+        "firstname": "Maxime",
+        "lastname": "Zimmer",
+        "agency": "STRASBOURG"
+    },
+    "1678730": {
+        "id": "1678730",
+        "aocUsername": "Antoine Richard",
+        "firstname": "Antoine",
+        "lastname": "Richard",
+        "agency": "LILLE"
+    },
+    "979154": {
+        "id": "979154",
+        "aocUsername": "Gaëlle CHALOT",
+        "firstname": "Gaëlle",
+        "lastname": "Chalot",
+        "agency": "STRASBOURG"
     }
 }
