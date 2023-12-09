@@ -45,7 +45,7 @@ dataMembersLeaderboard = dataLeaderboard['members']
 formattedMembers = []
 for memberId in dataSfeir:
     if memberId not in dataMembersLeaderboard:
-        print("{id} - {name} in Sfeir list but not in AoC list".format(id=memberId, name=dataSfeir[memberId]['name']))
+        print("{id} - {name} in Sfeir list but not in AoC list".format(id=memberId, name=dataSfeir[memberId]['aocUsername']))
         continue
     dataMemberLeaderboard = dataMembersLeaderboard[memberId]
     dataMemberSfeir = dataSfeir[memberId]
