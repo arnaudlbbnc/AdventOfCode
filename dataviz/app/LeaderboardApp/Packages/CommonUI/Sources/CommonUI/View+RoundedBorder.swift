@@ -13,7 +13,7 @@ public extension View {
         self.cornerRadius(radius)
             .overlay(
             RoundedRectangle(cornerRadius: radius)
-                .stroke(color, lineWidth: width)
+                .strokeBorder(color, lineWidth: width)
         )
     }
 
@@ -21,7 +21,7 @@ public extension View {
         self.cornerRadius(radius)
             .overlay(
             RoundedRectangle(cornerRadius: radius)
-                .stroke(linearGradient, lineWidth: width)
+                .strokeBorder(linearGradient, lineWidth: width)
         )
     }
 }
