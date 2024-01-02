@@ -29,7 +29,7 @@ public struct GetMostRecentLeaderboardDate {
 
     private func extractMostRecentDay(filenames: [String]) -> String? {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
+        dateFormatter.dateFormat = "yyyy-M-d"
         let dailyFiles = filenames.compactMap { (filename: String) -> Date? in
             var filename = filename
             filename.removeLast(5)

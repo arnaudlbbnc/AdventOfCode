@@ -25,17 +25,4 @@ final class ViewModel: ObservableObject {
             } ?? []
         structure = Structure.from(models: models)
     }
-
-    func color(for rank: Int) -> String {
-        switch rank {
-        case 1:
-            return "gold"
-        case 2:
-            return "silver"
-        case 3:
-            return "copper"
-        default:
-            return "white"
-        }
-    }
 }

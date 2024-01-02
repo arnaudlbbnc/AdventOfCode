@@ -1,14 +1,14 @@
 //
-//  TimestampView.swift
+//  TimestampViewLight.swift
+//  
 //
-//
-//  Created by Arnaud LE BOURBLANC on 25/11/2023.
+//  Created by Arnaud LE BOURBLANC on 02/01/2024.
 //
 
 import CommonUI
 import SwiftUI
 
-struct TimestampView: SwiftUI.View {
+struct TimestampViewLight: SwiftUI.View {
     private var timestamp: TimestampModel
 
     init(timestamp: TimestampModel) {
@@ -19,19 +19,19 @@ struct TimestampView: SwiftUI.View {
         HStack(spacing: 16) {
             Image(timestamp.imageName)
                 .resizable()
-                .frame(width: 100)
+                .frame(width: 60)
                 .aspectRatio(contentMode: .fit)
-            VStack(alignment: .leading, spacing: 4) {
+            VStack(alignment: .leading, spacing: 2) {
                 Text(timestamp.userName)
-                    .semiBoldFont(size: 22)
+                    .semiBoldFont(size: 12)
                 Text(timestamp.firstStarDurationRepresentation)
-                    .regularFont(size: 18)
+                    .regularFont(size: 10)
                 Text(timestamp.secondStarDurationRepresentation)
-                    .regularFont(size: 18)
+                    .regularFont(size: 10)
             }
             .padding(.trailing, 16)
         }
-        .frame(height: 100)
+        .frame(height: 60)
         .background(Color.background)
     }
 }

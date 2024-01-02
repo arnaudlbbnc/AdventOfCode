@@ -10,12 +10,13 @@ import SwiftUI
 
 public extension LinearGradient {
     static var gold: LinearGradient {
-        let colors = [ Color(hex: "#DBB400"),
-                 Color(hex: "#EFAF00"),
-                 Color(hex: "#F5D100"),
-                 Color(hex: "#F5D100"),
-                 Color(hex: "#D1AE15"),
-                 Color(hex: "#DBB400"),
+        let colors = [
+            Color(hex: "#DBB400"),
+            Color(hex: "#EFAF00"),
+            Color(hex: "#F5D100"),
+            Color(hex: "#F5D100"),
+            Color(hex: "#D1AE15"),
+            Color(hex: "#DBB400"),
         ].compactMap { $0 }
         return LinearGradient(
             gradient: Gradient(colors: colors),
@@ -24,12 +25,13 @@ public extension LinearGradient {
         )
     }
     static var silver: LinearGradient {
-        let colors = [ Color(hex: "#70706F"),
-                 Color(hex: "#7D7D7A"),
-                 Color(hex: "#B3B6B5"),
-                 Color(hex: "#8E8D8D"),
-                 Color(hex: "#B3B6B5"),
-                 Color(hex: "#A1A2A3"),
+        let colors = [
+            Color(hex: "#70706F"),
+            Color(hex: "#7D7D7A"),
+            Color(hex: "#B3B6B5"),
+            Color(hex: "#8E8D8D"),
+            Color(hex: "#B3B6B5"),
+            Color(hex: "#A1A2A3"),
         ].compactMap { $0 }
         return LinearGradient(
             gradient: Gradient(colors: colors),
@@ -38,12 +40,23 @@ public extension LinearGradient {
         )
     }
     static var bronze: LinearGradient {
-        let colors = [ Color(hex: "#804A00"),
-                 Color(hex: "#9C7A3C"),
-                 Color(hex: "#B08D57"),
-                 Color(hex: "#895E1A"),
-                 Color(hex: "#804A00"),
-                 Color(hex: "#B08D57"),
+        let colors = [
+            Color(hex: "#804A00"),
+            Color(hex: "#9C7A3C"),
+            Color(hex: "#B08D57"),
+            Color(hex: "#895E1A"),
+            Color(hex: "#804A00"),
+            Color(hex: "#B08D57"),
+        ].compactMap { $0 }
+        return LinearGradient(
+            gradient: Gradient(colors: colors),
+            startPoint: .topLeading,
+            endPoint: .bottomTrailing
+        )
+    }
+    static var green: LinearGradient {
+        let colors = [
+            Color(hex: "#00CC00")
         ].compactMap { $0 }
         return LinearGradient(
             gradient: Gradient(colors: colors),
