@@ -36,6 +36,7 @@
 		C74A57032B0147C5000212E6 /* GithubService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = GithubService; sourceTree = "<group>"; };
 		C74A570F2B0163D2000212E6 /* Dependency */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Dependency; sourceTree = "<group>"; };
 		C74A57102B0163D2000212E6 /* CommonUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CommonUI; sourceTree = "<group>"; };
+		C766B9062B4AE47700119072 /* ChartsUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ChartsUI; sourceTree = "<group>"; };
 		C7A5E8D72AF7048B00493766 /* LeaderboardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeaderboardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A5E8DA2AF7048B00493766 /* LeaderboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardApp.swift; sourceTree = "<group>"; };
 		C7A5E8DE2AF7048E00493766 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				C7A5E8FC2AF7109100493766 /* AgenciesUI */,
+				C766B9062B4AE47700119072 /* ChartsUI */,
 				C7D510F12B02C67D00DAF255 /* Common */,
 				C74A57102B0163D2000212E6 /* CommonUI */,
 				C7A5E8FF2AF7109100493766 /* ContainerUI */,

@@ -9,6 +9,5 @@ import Foundation
 
 struct TimestampModel: TimestampProtocol {
     var user: UserProtocol
-    var firstStarDuration: TimeInterval
-    var secondStarDuration: TimeInterval?
+    var starsDuration: TimestampDayProtocol
 }
