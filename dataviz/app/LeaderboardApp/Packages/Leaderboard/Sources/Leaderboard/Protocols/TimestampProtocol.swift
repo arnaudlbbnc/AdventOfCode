@@ -9,6 +9,5 @@ import Foundation
 
 public protocol TimestampProtocol {
     var user: UserProtocol { get }
-    var firstStarDuration: TimeInterval { get }
-    var secondStarDuration: TimeInterval? { get }
+    var starsDuration: TimestampDayProtocol { get }
 }

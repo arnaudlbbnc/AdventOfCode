@@ -4,38 +4,30 @@
 import PackageDescription
 
 let package = Package(
-    name: "ContainerUI",
+    name: "ChartsUI",
     platforms: [
         .iOS(.v17)
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "ContainerUI",
-            targets: ["ContainerUI"]),
+            name: "ChartsUI",
+            targets: ["ChartsUI"]),
     ],
     dependencies: [
-        .package(name: "AgenciesUI", path: "../AgenciesUI"),
-        .package(name: "ChartsUI", path: "../ChartsUI"),
         .package(name: "Common", path: "../Common"),
         .package(name: "CommonUI", path: "../CommonUI"),
-        .package(name: "Leaderboard", path: "../Leaderboard"),
-        .package(name: "TimestampsUI", path: "../TimestampsUI"),
-        .package(name: "UsersUI", path: "../UsersUI")
+        .package(name: "Leaderboard", path: "../Leaderboard")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "ContainerUI",
+            name: "ChartsUI",
             dependencies: [
-                "AgenciesUI",
-                "ChartsUI",
                 "Common",
                 "CommonUI",
-                "Leaderboard",
-                "TimestampsUI",
-                "UsersUI"
+                "Leaderboard"
             ]
         )
     ]

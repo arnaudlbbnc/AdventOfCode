@@ -41,7 +41,7 @@ struct TimestampModel {
         Self(userId: timestamp.user.id,
              userFirstName: timestamp.user.firstname,
              userLastName: timestamp.user.lastname,
-             firstStarDuration: timestamp.firstStarDuration,
-             secondStarDuration: timestamp.secondStarDuration)
+             firstStarDuration: timestamp.starsDuration.firstStarDuration,
+             secondStarDuration: timestamp.starsDuration.secondStarDuration)
     }
 }

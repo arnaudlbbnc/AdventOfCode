@@ -25,11 +25,13 @@ public struct GetTimestamps {
             if let secondStarTimestamp = timestampForDay[safe: 1] {
                 secondStarDuration = secondStarTimestamp - firstStarTimestamp
             }
+            let timeStampsDay = TimestampDayModel(day: day, 
+                                                  firstStarDuration: firstStarTimestamp - dayTimeInterval,
+                                                  secondStarDuration: secondStarDuration)
             return TimestampModel(user: $0,
-                                  firstStarDuration: firstStarTimestamp - dayTimeInterval,
-                                  secondStarDuration: secondStarDuration)
+                                  starsDuration: timeStampsDay)
         }.sorted {
-            $0.firstStarDuration <= $1.firstStarDuration
+            $0.starsDuration.firstStarDuration <= $1.starsDuration.firstStarDuration
         }
     }
 }
