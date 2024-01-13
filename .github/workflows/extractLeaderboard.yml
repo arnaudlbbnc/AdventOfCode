@@ -1,8 +1,8 @@
 name: Save daily leaderboard
 
 on:
-  schedule:
-    - cron: '50 4 * * *' # At 04:55 UTC
+  #schedule:
+    #- cron: '50 4 * * *' # At 04:55 UTC
   workflow_dispatch:
 
 jobs:
